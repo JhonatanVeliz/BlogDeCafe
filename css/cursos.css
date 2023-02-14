@@ -1,0 +1,47 @@
+/* --CUSTOM PROPERTIES-- */
+:root{
+    --font-princial: 'PT Sans', arial, sans-serif;
+    --font-secundary: 'Roboto', arial, sans-serif;
+    --color-black: rgb(3, 3, 3);
+    --color-white: rgb(243, 235, 235);
+    --color-brown: rgb(114, 46, 1);
+    --color-border: rgba(184, 184, 184, 0.678);
+}
+
+.main__subtitle{
+    text-align: center;
+}
+.min-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: 1.5rem;
+}
+.container-img{
+    width: 100%;
+    height: 90%;
+}
+.container__subtitle{
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width:650px) {
+    .subtitle{
+        font-size: 2rem;
+    } 
+    .list__element{
+        margin: 1rem 0;
+        font-size: 1.6rem;
+    }
+    .min-container{
+        grid-template-columns: 1fr;
+    }
+    .container-img{
+        height: 35rem;
+    }
+    .container__subtitle{
+        margin-top: 1.5rem;
+    }
+     
+}

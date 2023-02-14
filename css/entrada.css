@@ -1,0 +1,38 @@
+/* --CUSTOM PROPERTIES-- */
+:root{
+    --font-princial: 'PT Sans', arial, sans-serif;
+    --font-secundary: 'Roboto', arial, sans-serif;
+    --color-black: rgb(3, 3, 3);
+    --color-white: rgb(243, 235, 235);
+    --color-brown: rgb(114, 46, 1);
+    --color-border: rgba(184, 184, 184, 0.678);
+}
+
+.main__container{
+    margin-bottom: 2rem;
+}
+
+.main__subtitle{
+    text-align: center;
+}
+.container-img{
+    margin: 2rem auto;;
+    width: 80%;
+}
+.text{
+    padding: 1rem 0;
+}
+
+                    /* --MEDIAQUERIS-- */
+@media screen and (max-width: 650px) {
+    .subtitle{
+        font-size: 2rem;
+    }
+    .subtitle--start{
+        text-align: start;
+    }
+    .text{
+        font-size: 1.3rem;
+    }
+}
+                               

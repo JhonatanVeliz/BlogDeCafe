@@ -1,0 +1,38 @@
+/* --CUSTOM PROPERTIES-- */
+:root {
+    --font-princial: 'PT Sans', arial, sans-serif;
+    --font-secundary: 'Roboto', arial, sans-serif;
+    --color-black: rgb(3, 3, 3);
+    --color-white: rgb(243, 235, 235);
+    --color-brown: rgb(114, 46, 1);
+    --color-border: rgba(184, 184, 184, 0.678);
+}
+
+.main__subtitle{
+    text-align: center;
+}
+
+.main__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding: 2rem 0;
+}
+.text:last-of-type{
+    margin-top: 2rem;
+}
+
+
+                /* --MEDIAQUERIS */
+@media screen  and (max-width:650px){
+    .main__grid{
+        grid-template-columns: 1fr;
+    }
+    .subtitle{
+        font-size: 2rem;
+    }
+    .text{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}

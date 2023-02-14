@@ -1,0 +1,102 @@
+                                /* --CUSTOM PROPERTIES-- */
+:root{
+    --font-princial: 'PT Sans', arial, sans-serif;
+    --font-secundary: 'Roboto', arial, sans-serif;
+    --color-black: rgb(3, 3, 3);
+    --color-white: rgb(243, 235, 235);
+    --color-brown: rgb(114, 46, 1);
+    --color-border: rgba(184, 184, 184, 0.678);
+}
+
+.main{
+    width: 90%;
+    min-height: 35rem;
+    height: auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    margin: 5rem auto;
+    position: relative;
+    overflow: hidden;
+}
+.main::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.363);
+    position: absolute;
+}
+.subtitle{
+    color: var(--color-white);
+    text-align: center;
+    margin-top: 0;
+}
+
+.form{
+    z-index: 1;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgba(0, 57, 180, 0.945);
+    border-radius: 1rem;
+    padding: 1.5rem 3rem 3rem 3rem;
+    box-shadow: 0 0 6px;
+}
+.label{
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    color: var(--color-white);
+    padding: 1rem 0;
+}
+
+.input{
+    font-family: var(--font-secundary);
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: .3rem;
+    border: none;
+}
+.text-container{
+    width: 100%;
+    overflow: hidden;
+    border-radius: .3rem;
+}
+
+.textarea{
+    min-height: 10rem;
+    max-height: 10rem;
+}
+
+.buttom{
+    margin: 2rem auto 0 auto;
+    padding: 1.5rem;
+    background-color: rgb(14, 163, 0);
+    display: block;
+    width: 30%;
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    transition: .5s;
+    border: none;
+    border-radius: .5rem;
+}
+
+.buttom:hover{
+    transform: scale(1.1);
+    background-color: #a70a0a;
+}
+
+                /* --MEDIAQUERIS-- */
+@media screen and (max-width: 650px) {
+    .form{
+        width: 90%;
+    }
+}
